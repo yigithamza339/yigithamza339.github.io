@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LebrySpola+ | Official Website</title>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0a0a0a;
+  color: #eaeaea;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: #111;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.logo { font-weight: bold; color: #ffd400; font-size: 20px; }
+nav a {
+  color: #aaa;
+  margin-left: 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover, nav a.active { color: #fff; }
+section { max-width: 1200px; margin: 60px auto; padding: 0 40px; }
+section h2 { color: #ffd400; margin-bottom: 20px; }
+.hiyerarsi { width: 100%; border-collapse: collapse; margin-bottom: 50px; }
+.hiyerarsi th, .hiyerarsi td { border: 2px solid #ffd400; padding: 12px; text-align: center; }
+.hiyerarsi th { background: #ffd400; color: #000; }
+.accordion { background: #111; border-left: 5px solid #ffd400; margin-bottom: 15px; padding: 20px; cursor: pointer; font-weight: bold; }
+.accordion-content { display: none; padding: 20px; background: #0d0d0d; line-height: 1.7; }
+footer { padding: 40px; text-align: center; color: #aaa; border-top: 1px solid #1f2a3a; background: #0b0a0a; }
+input[type=text] { padding: 8px; border-radius: 8px; border: 1px solid #555; margin-left: 20px; color: #000; }
+button { padding: 8px 12px; border-radius: 8px; border: none; background: #ffd400; color: #000; cursor: pointer; margin-left: 8px; }
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">LEBRYSPOLA+</div>
+  <nav>
+    <a href="#" class="active" onclick="showTab('anasayfa')">Anasayfa</a>
+    <a href="#" onclick="showTab('hiyerarsi')">Hiyerarşi</a>
+    <a href="#" onclick="showTab('cv')">CV</a>
+    <a href="#" onclick="showTab('iletisim')">İletişim</a>
+    <input type="text" id="searchInput" placeholder="Ara...">
+    <button onclick="searchSite()">Ara</button>
+  </nav>
+</header>
+
+<section id="anasayfa">
+  <h2>LEBRYSPOLA+ Genel Bilgiler</h2>
+  <p>LebrySpola+, Tibua ekosisteminin resmi üst yönetim ve standart belirleme kurumu olarak faaliyet göstermektedir. Sistemin amacı, küresel operasyonların, güvenliğin ve kriz yönetiminin kontrol altında tutulmasını sağlamaktır. Tüm alt birimler, operasyon, teknoloji ve güvenlik alanında kritik görevler üstlenir ve sistemin işleyişini sürekli denetler.</p>
+  <p>Bu resmi yapının birimleri, enerji yönetimi, veri işleme ve güvenlik protokolleri ile birbirine bağlıdır. Küresel çapta risk analizleri yapılır, tehditler önceden sınıflandırılır ve resmi prosedürler doğrultusunda müdahale edilir. LebrySpola+ tüm bu süreçleri denetleyerek sistemin güvenli, sürdürülebilir ve verimli çalışmasını sağlar.</p>
+</section>
+
+<section id="hiyerarsi" style="display:none;">
+  <h2>Hiyerarşi Tablosu</h2>
+  <table class="hiyerarsi">
+    <tr><th>Üst Yapı</th><th>Birimi</th><th>Görev ve Sorumluluklar</th></tr>
+    <tr><td>LEBRYSPOLA+</td><td>Merkezi Yönetim</td><td>Küresel denge, standartlar, kriz yönetimi</td></tr>
+    <tr><td>Director Union</td><td>Yönetsel Karar Konseyi</td><td>Stratejik kararlar ve koordinasyon</td></tr>
+    <tr><td>THE KAZIM OKI</td><td>Gizli Strateji Merkezi</td><td>Uzun vadeli planlama ve protokoller</td></tr>
+    <tr><td>TEKGAN</td><td>Güvenlik ve Müdahale</td><td>Karantina, kriz müdahalesi, koruma</td></tr>
+    <tr><td>TELCOS HD</td><td>Resmi Yönetim Merkezi</td><td>Kayıt, prosedür, denetim</td></tr>
+    <tr><td>Tibua Sizio</td><td>Operasyonel Kontrol</td><td>Enerji yönetimi, güvenlik ve izleme sistemleri</td></tr>
+  </table>
+</section>
+
+<section id="cv" style="display:none;">
+  <h2>Kurumsal CV & Detaylı Açıklamalar</h2>
+  <div class="accordion">LebrySpola+ Nedir?</div>
+  <div class="accordion-content">LebrySpola+, resmi olarak küresel operasyonları yöneten üst yönetim çekirdeğidir. Amacı, kriz ve kaos oluşmadan tüm süreçleri denetleyerek standartları korumaktır.</div>
+  <div class="accordion">Kurumsal Özgeçmiş (CV)</div>
+  <div class="accordion-content">• Kuruluş Türü: Üst Yönetim & Standart Birliği<br>• Yetki Seviyesi: Mutlak<br>• Bağlı Yapılar: Tibua Ekosistemi<br>• Yönetim Modeli: Director Union<br>• Temel Amaç: Küresel düzen, kriz yönetimi, standart belirleme</div>
+  <div class="accordion">Alt Birimler & Görevleri</div>
+  <div class="accordion-content">• TEKGAN: Güvenlik, karantina, kriz müdahalesi<br>• TELCOS HD: Resmi yönetim ve denetim<br>• Tibua Sizio: Operasyonel kontrol ve izleme<br>• THE KAZIM OKI: Gizli operasyon ve uzun vadeli planlama</div>
+  <div class="accordion">Neden Var?</div>
+  <div class="accordion-content">LebrySpola+, resmi olarak küresel tehditleri önceden tespit etmek ve oluşmadan önce yönetmek için vardır.</div>
+</section>
+
+<section id="iletisim" style="display:none;">
+  <h2>İletişim</h2>
+  <p>Resmi e-posta ile iletişim: <strong>miadakcan@outlook.com.tr</strong></p>
+</section>
+
+<footer>© LebrySpola+ — Official Governance & Standards</footer>
+
+<script>
+function showTab(tabId){
+  document.querySelectorAll('section').forEach(s => s.style.display='none');
+  document.getElementById(tabId).style.display='block';
+  document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+  document.querySelector('nav a[onclick*="'+tabId+'"]').classList.add('active');
+}
+showTab('anasayfa');
+
+document.querySelectorAll('.accordion').forEach(acc => {
+  acc.onclick = () => {
+    const next = acc.nextElementSibling;
+    next.style.display = next.style.display === 'block' ? 'none' : 'block';
+  }
+});
+
+function searchSite(){
+  const input = document.getElementById('searchInput').value.toLowerCase();
+  const sections = document.querySelectorAll('section');
+  sections.forEach(sec => {
+    if(sec.innerText.toLowerCase().includes(input)){
+      sec.style.display = 'block';
+    } else {
+      sec.style.display = 'none';
+    }
+  });
+}
+</script>
+
+</body>
+</html>
+
+</html>
+
